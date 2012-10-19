@@ -53,6 +53,20 @@ Fall 2012</p>
 
 <h5>Assignments for October 25</h5>
 
+<p><b>Reading</b>: This <a href="http://www.tulsaworld.com/news/article.aspx?subjectid=11&amp;articleid=20091115_11_A1_RitaGo41440">Tulsa World story on lottery ticket sales</a>, plus <a href="https://github.com/tthibo/SQL-Tutorial/blob/master/tutorial_files/part2.textile">Part II of the SQLite Tutorial</a>. If you're having any trouble with the homework, do all of the exercises.</p>
+
+<p><b>SQLite</b>: Download this <a href="http://www.elections.il.gov/Downloads/ElectionInformation/VoteTotals/GE2010Cty.txt">tab-delimited text file of Illinois election results from 2010</a> from the state elections agency. Using the SQLite manager, create a new SQLite database and name it with your first name and Oct25, like so: derek_oct25. In that database, import the text file that you downloaded - remember, it is not a CSV file, so you'll need to change your file type to "All Files" when importing. Using the import wizard, you will rename the table to illinois10, make sure the column headers box is checked and the delimiter is set to tab. Then click "OK" and it will import the data, and then ask you if you want to modify this table. You do, so click "OK" again. Now you'll define the data types for each field - don't change the field names - use VARCHAR for everything *except* VoteFor, OfficeSequence, CandidateID and Votes. Those fields are INTEGER.</p>
+<p>Then, write queries to answer the following questions:
+  <ol>
+    <li>Who was the leading vote-getter in Cook County?</li>
+    <li>Who was the leading Republican vote-getter in Cook County?</li>
+    <li>Which congressional race saw the most votes?</li>
+    <li>Which congressional race saw the least votes?</li>
+    <li>What were the total votes for all of the candidates for Attorney General?</li>
+  </ol>
+
+Send me the SQL queries and your database file (the first_name_oct25.sqlite file) via email by 6 p.m. on Oct. 25.</p>
+
 
 <footer>
   <p>This project is maintained by <a href="https://github.com/dwillis">dwillis</a></p>
