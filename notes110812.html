@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Digital Frameworks for Reporting</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="index.html">Digital Frameworks for Reporting</a></h1>
+        <p>Class site for JOUR 490</p>
+        
+        <h5>Course Outline</h5>
+        <ul>
+          <li><a href="notes092712.html">Sept. 27 – Introductions; Data; Excel Skills</a></li>
+          <li><a href="notes100412.html">Oct. 4 – Text Visualization; Excel for Analysis</a></li>
+          <li><a href="notes101112.html">Oct. 11 – Working with election data; Excel Visualization</a></li>
+          <li><a href="notes101512.html">Oct. 15 (note date change!) – SQLite; Critique due</a></li>
+          <li><a href="notes102512.html">Oct. 25 – SQLite, Fusion Tables</a></li>
+          <li><a href="notes110112.html">Nov. 1 – Congressional data; SQL Joins; Midterm due</a></li>
+          <li><a href="notes110812.html">Nov. 8 – Working with PDFs, Project work</a></li>
+          <li><a href="index.html">Nov. 15 – Mapping, 2nd Critique due</a></li>
+          <li><a href="index.html">Nov. 22 – Thanksgiving - NO CLASS</a></li>
+          <li><a href="index.html">Nov. 29 – Project work and campaign finance data</a></li>
+          <li><a href="index.html">Dec. 6 - Final projects and audit due; wrap-up</a></li>
+        </ul>
+      </header>
+      <section>
+        <p>Digital Frameworks for Reporting
+JOUR 490
+Medill School of Journalism
+Fall 2012</p>
+
+<h3>November 8, 2012</h3>
+
+<h5>Election Data</h5>
+<p>We'll talk a bit about what makes up an election data toolkit and show some examples of election results and exit polls on news websites.</p>
+
+<h5>PDFs</h5>
+<p>Everyone hates them (well, lots of people). But sometimes locked away inside PDFs are good data. We'll learn some tools and tips for freeing and using that data.</p>
+
+<h5>Links</h5>
+<ul>
+  <li><a href="http://www-personal.umich.edu/~mejn/election/2012/">Election Maps</a></li>
+  <li><a href="http://election2012.npr.org/">NPR's Election Night 2012</a></li>
+  <li><a href="http://www.washingtonpost.com/wp-srv/special/politics/2012-exit-polls/">Washington Post's Exit Polls 2012</a></li>
+  <li><a href="http://www.mynevadacounty.com/nc/elections/docs/2012%20Elections/November%206%202012/Results/Cumulative%20Report.pdf">Nevada County, Calif., election results</a></li>
+  <li><a href="https://github.com/tmyroadctfig/xpdf">xPDF</a></li>
+  <li><a href="http://www.bluem.net/en/mac/packages/">Pdftotext for Mac</a></li>
+  <li><a href="http://multimedia.peacecorps.gov/multimedia/pdf/stats/schools2012.pdf">Peace Corps College Rankings</a>
+</ul>
+
+<h5>Assignments for Nov. 15</h5>
+
+<strong>SQLite:</strong>
+<p>Put your state's two most recent general election county-level results data for major statewide offices (Governor, Lt. Gov., Attorney General) and Congress (House and Senate) into a SQLite database. You can do this by first organizing them in a spreadsheet or Fusion Tables and then exporting a CSV to import into SQLite. Ideally you would have one row for each candidate in each election, or a row for each race with columns for the major candidates (using parties instead of names, for example). Remember to define your data types when importing. Let me know if you're having trouble with this.</p>
+  <p>Then write SQL queries to find the following information:</p>
+
+<ol>
+  <li>Show the offices, years and total votes for each race.</li>
+  <li>Show the top counties for Democratic votes in the most recent statewide race (Senate, Governor).</li>
+  <li>Show the congressional district with the most total votes in the most recent House election.</li>
+</ol>
+
+<p>Send the SQLite database, plus your SQL queries and explanation of them, to me by email.</p>
+
+<strong>Critique</strong>: 
+<p>Write at least 500 words about <a href="http://www.npr.org/2011/11/07/142035420/secret-watch-list-reveals-failure-to-curb-toxic-air">this NPR piece on air pollution</a> and its accompanying graphic elements. Not only tell me what you would have done differently and what the piece did well, but also focus on where and how the data is used, cited and explained.</p> 
+
+<footer>
+  <p>This project is maintained by <a href="https://github.com/dwillis">dwillis</a></p>
+  <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+</footer>
+
+      </section>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
