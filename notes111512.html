@@ -64,13 +64,15 @@ Fall 2012</p>
 
 <strong>SQLite:</strong>
 <p>If you haven't already done so, put your election results tables into a single combined table, perhaps called results. You'll need to add a year column if there's not already one there to distinguish one year's elections from another. If your results have candidate names as columns (rather than in the rows), then change the header to dem_votes and rep_votes to make them generic across elections.</p>
+  <p>You can do this in excel and then re-import, or you can pick one of your tables and make that the new "master" table and copy the others into it, assuming that they have the same fields. Be sure to add a year column to both the table you're copying from and into. Then, if they have the exact same fields, you can do this, assuming that my results table is the one that will contain all of the data, and results_2010 has just 2010 data:
+  <code>INSERT INTO results SELECT * from results_2010</code><p>
   <p>Then add a counties table listing the counties in your state. You may want to create this by hand, or from doing a group by query from your results, like so (assuming that your results table has a field called "county"):
     
     <code>CREATE TABLE counties AS
           SELECT county
           FROM results
           GROUP BY county
-          ORDER BY county</code>
+          ORDER BY county</code></p>
 
   <p>Here's what we're shooting for for Nov. 29, the next time we meet:</p>
 
